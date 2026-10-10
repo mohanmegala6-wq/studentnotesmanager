@@ -36,6 +36,25 @@
                         class="cancel" hidden>Cancel Edit</button>
             </form>
         </section>
+        
+<section class="form-box">
+    <h2>📂 Upload Study Materials</h2>
+
+    <label for="materialSubject">Subject</label>
+    <input type="text" id="materialSubject"
+           placeholder="Example: Python">
+
+    <label for="materialFile">Choose your material</label>
+    <input type="file" id="materialFile"
+           accept=".pdf,.ppt,.pptx,.doc,.docx,.txt">
+
+    <button type="button" id="uploadButton">
+        Upload Material
+    </button>
+
+    <div id="materialsList"></div>
+</section>
+
 
         <section class="notes-section">
             <h2>My Notes</h2>
