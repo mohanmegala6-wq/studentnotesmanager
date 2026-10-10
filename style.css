@@ -1,0 +1,153 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f3f4fa;
+    color: #252545;
+}
+
+header {
+    background: #6254c7;
+    color: white;
+    text-align: center;
+    padding: 28px 15px;
+}
+
+header h1 {
+    margin: 0 0 10px;
+}
+
+header p {
+    margin: 0;
+}
+
+main {
+    width: 90%;
+    max-width: 800px;
+    margin: 25px auto;
+}
+
+.form-box,
+.notes-section {
+    background: white;
+    padding: 22px;
+    margin-bottom: 22px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px #00000010;
+}
+
+h2 {
+    color: #5144ae;
+    margin-top: 0;
+}
+
+label {
+    display: block;
+    margin: 14px 0 6px;
+    font-weight: bold;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    font: inherit;
+}
+
+textarea {
+    resize: vertical;
+}
+
+input:focus,
+textarea:focus {
+    outline: 2px solid #aaa0f5;
+    border-color: #6254c7;
+}
+
+button {
+    background: #6254c7;
+    color: white;
+    border: none;
+    padding: 11px 16px;
+    margin-top: 14px;
+    margin-right: 6px;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+button:hover {
+    opacity: 0.85;
+}
+
+.cancel {
+    background: #777;
+}
+
+.note-card {
+    border: 1px solid #e0def3;
+    border-left: 5px solid #6254c7;
+    border-radius: 8px;
+    padding: 16px;
+    margin-top: 15px;
+    overflow-wrap: anywhere;
+}
+
+.note-card h3 {
+    margin: 0 0 8px;
+}
+
+.note-card h4 {
+    margin: 8px 0;
+    color: #6254c7;
+}
+
+.note-card p {
+    white-space: pre-wrap;
+    line-height: 1.5;
+}
+
+.note-card .delete {
+    background: #d94151;
+}
+
+#noteCount {
+    color: #666;
+    font-size: 14px;
+}
+
+.empty-message {
+    color: #777;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    color: #666;
+}
+
+[hidden] {
+    display: none !important;
+}
+
+@media (max-width: 500px) {
+    main {
+        width: 94%;
+    }
+
+    .form-box,
+    .notes-section {
+        padding: 16px;
+    }
+
+    header h1 {
+        font-size: 24px;
+    }
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Notes Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>📚 Student Notes Manager</h1>
+        <p>Organize your subjects, topics and notes easily.</p>
+    </header>
+
+    <main>
+        <section class="form-box">
+            <h2 id="formTitle">Add Your Note</h2>
+
+            <form id="noteForm">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject"
+                       placeholder="Enter subject name" required>
+
+                <label for="topic">Topic</label>
+                <input type="text" id="topic"
+                       placeholder="Enter topic name" required>
+
+                <label for="note">Your Note</label>
+                <textarea id="note" rows="4"
+                          placeholder="Write your notes here..."
+                          required></textarea>
+
+                <button type="submit" id="saveButton">Add Note</button>
+                <button type="button" id="cancelButton"
+                        class="cancel" hidden>Cancel Edit</button>
+            </form>
+        </section>
+
+        <section class="notes-section">
+            <h2>My Notes</h2>
+
+            <input type="search" id="search"
+                   placeholder="Search by subject or topic...">
+
+            <p id="noteCount">Total notes: 0</p>
+            <div id="notesList"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Made with ❤️ by a student</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
