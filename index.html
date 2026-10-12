@@ -1,44 +1,24 @@
-```html
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Student Notes Manager</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
 
-    <header>
-        <h1>📚 Student Notes Manager</h1>
-        <p>Organize and store your study materials easily.</p>
-    </header>
+<section class="form-box">
+    <h2 id="formTitle">Add Your Note</h2>
 
-    <main>
-        <section class="form-box">
-            <h2>📂 Upload Study Materials</h2>
+    <form id="noteForm">
+        <label for="subject">Subject</label>
+        <input type="text" id="subject"
+               placeholder="Enter subject name" required>
 
-            <label for="materialSubject">Subject</label>
-            <input type="text" id="materialSubject"
-                   placeholder="Example: Python">
+        <label for="topic">Topic</label>
+        <input type="text" id="topic"
+               placeholder="Enter topic name" required>
 
-            <label for="materialFile">Choose your material</label>
-            <input type="file" id="materialFile"
-                   accept=".pdf,.ppt,.pptx,.doc,.docx,.txt">
+        <label for="note">Your Note</label>
+        <textarea id="note" rows="4"
+                  placeholder="Write your notes here..."
+                  required></textarea>
 
-            <button type="button" id="uploadButton">
-                Upload Material
-            </button>
+        <button type="submit" id="saveButton">Add Note</button>
+        <button type="button" id="cancelButton"
+                class="cancel" hidden>Cancel Edit</button>
+    </form>
+</section>
 
-            <div id="materialsList"></div>
-        </section>
-    </main>
-
-    <footer>
-        <p>Made with ❤️ by a student</p>
-    </footer>
-
-    <script src="script.js"></script>
-</body>
-</html>
-```
